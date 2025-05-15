@@ -1,0 +1,91 @@
+body {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem;
+   background-color: lightgray;
+}
+
+.container form{
+   width: 500px;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+}
+.container input:not([type="checkbox"]) {
+   width: 100%;
+   box-sizing: border-box;
+   font-size: 1.5rem;
+   border: 1px solid white;
+   border-radius: 0.5rem;
+   padding:0.5rem;
+   margin-bottom: 0.5rem;
+}
+
+.rows {
+   display: flex;
+   gap: 1rem;;
+   margin-bottom: 1.0rem;
+}
+.rows input {
+   width: calc(50% - 1rem);
+}
+
+#mobile, #email{
+   flex: 1;
+   /* width:100%; */
+}
+#email {
+   margin-bottom: 0.5rem;;
+}
+
+.agree-check {
+   display: flex;
+   align-items: flex-start;
+   gap: 0.5rem;
+   margin-top: 1rem;
+}
+.agree-check label {
+   margin-right: 2rem;
+}
+.agree-check p{
+   margin: 0;
+   flex: 1;
+}
+#highlight-word {
+   background-color: blue;
+   color:white;
+   border: none;
+   border-radius:0.2rem;
+   font-weight: 500;
+   padding: 0.15rem 0.5rem;
+   font-size:smaller;
+}
+
+.sign-buttons {
+   display: flex;
+   gap: 1rem;
+   margin-top: 1rem;
+}
+.sign-buttons button:hover {
+   cursor: pointer;
+   opacity: 0.5;
+}
+.sign-buttons button{
+   flex: 1;
+   height: 3em;
+   border-radius: 0.5rem;
+   border: none;
+   font-size: 1.2em;
+}
+
+#signUpBtn {
+   background: powderblue;
+   color:white;
+}
+#signInBtn {
+   background: lightgreen;
+   color:white;
+}

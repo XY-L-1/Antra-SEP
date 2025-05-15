@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Antra Homework</title>
+   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1> Sign Up</h1>
+
+   <div class="container">
+      <form>
+         <!-- First Row -->
+          <div class="rows">
+            <input type="text" id="fname" name="fname" placeholder="First Name">
+            <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+          </div>
+
+         <!-- Second and Third Row -->
+         <input type="text" id="mobile" name="mobile" placeholder="Mobile No."><br>
+         <input type="email" id="email" name="email" placeholder="Email Address"><br>
+
+         <!-- Fourth Row -->
+          <div class="rows">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password">
+          </div>
+
+          <div class="agree-check">
+            <input type="checkbox" id="agreePolicy" name="agreePolicy">
+            <label for="agreePolicy"><strong>I Agree</strong></label>
+   
+            <p id="term_description">By clicking <span id="highlight-word">Register</span>, you agree to the 
+            <a href="terms.html">Terms and Conditions</a> set out by this site, including our Cookie Use</p>
+          </div>
+
+         <div class="sign-buttons">
+            <button id="signUpBtn" type="submit">Register</button>
+            <button id="signInBtn" type="submit">Sign In</button>
+         </div>
+         
+         <!-- <div class="sign_btn">
+            <input type="submit" value="Register" id="signUp">
+            <input type="submit" value="Sign In" id="signIn">
+         </div> -->
+      </form>
+   </div>
+</body>
+</html>
