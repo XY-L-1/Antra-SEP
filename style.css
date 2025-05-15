@@ -27,18 +27,19 @@ body {
 .rows {
    display: flex;
    gap: 1rem;;
-   margin-bottom: 1.0rem;
+   
 }
 .rows input {
-   width: calc(50% - 1rem);
+   width: calc(50% - 0.5rem);
+   margin: 1rem 0;
 }
 
 #mobile, #email{
    flex: 1;
-   /* width:100%; */
+   margin: 0.5rem 0;
 }
 #email {
-   margin-bottom: 0.5rem;;
+   margin: 0.5rem 0;
 }
 
 .agree-check {
@@ -51,7 +52,7 @@ body {
    margin-right: 2rem;
 }
 .agree-check p{
-   margin: 0;
+
    flex: 1;
 }
 #highlight-word {
