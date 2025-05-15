@@ -90,3 +90,23 @@ body {
    background: lightgreen;
    color:white;
 }
+
+
+
+
+@media (max-width: 360px) {
+   .container form {
+      width: 90%;
+      max-width: 300px;
+   }
+   .rows {
+      flex-wrap: wrap;
+   }
+   .container input:not([type="checkbox"]) {
+     font-size: 0.5rem;
+     padding: 0.4rem;
+   }
+   .sign-buttons button {
+     font-size: 0.5rem;
+   }
+ }
