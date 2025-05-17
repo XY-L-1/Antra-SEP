@@ -1,0 +1,75 @@
+body {
+   font-family: sans-serif;
+ }
+
+.post-container {
+   background-color: #fff;
+   border-style: solid;
+   border-color: #cfd9de;
+   border-width: 1px;
+   border-radius: 16px;
+   padding: 12px;
+   display: grid;
+   grid-template-columns: auto 1fr;
+   grid-template-rows: min-content 1fr min-content;
+   grid-template-areas:
+      "avatar header"
+      "avatar content"
+      "avatar actions";
+   gap: 12px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.post-container img {
+   grid-area: avatar;
+   border-radius: 50%;
+}
+
+.name {
+   grid-area: header;
+   color:#000;
+   font-family: sans-serif;
+   font-size: 15px;
+   font-weight: bold;
+   display: flex;
+   gap: 4px;
+}
+.name #metadata {
+   color: #71767b;
+   font-family: sans-serif;
+   font-size: 15px;
+}
+
+.message {
+   grid-area: content;
+   color: #0f1419;
+   font-family: sans-serif;
+   font-size: 15px;
+   margin-top: 2px;
+}
+
+.actions-row {
+   max-width: 425px;
+   grid-area: actions;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 12px;
+}
+
+.action-item {
+   display: flex;
+   gap: 12px;
+}
+.action-item > svg {
+   fill: #536471;
+   width: 16px;
+   height: 16px;
+   align-items: center;
+}
+.action-item > span {
+   color: #536471;
+   font-size: 13px;
+}
